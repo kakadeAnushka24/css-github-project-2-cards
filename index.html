@@ -3,6 +3,9 @@
 <head>
     <title>Corse-Card</title>
     <style> 
+    body{
+            background-color:white;
+        }
        .container{
             display: flex;
             justify-content: space-evenly;
@@ -11,22 +14,42 @@
             background-color:rgb(232, 235, 239);
             height: 400px;
             width: 300px;
-            margin: 5px;
-            border: 1px solid rgb(206, 198, 198)
+           margin: 5px;
+            border: 1px solid rgb(100, 97, 97)
             border-radius: 20px;
+
+       }
+
+        .main-img{
+            border-radius: 10px 10px 0px 0px ;
+            margin-bottom: 5px;
+        } 
+
+         .project-heading{
+        font-size: 25px;
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+          .sub-container{
+            padding-left: 20px;
+            padding-right: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <div class="item">
-            <image src="./image/rtc-homepage.png" width="300px" class="main-img"/>
+            <img src="./image/rtc-homepage.png" width="300px" class="main-img"/>
+<div class="project-heading">
+            <span class="project-heading">Spaceship</span>
+
 </div>
- <div class="item">1</div>
+        </div>
         <div class="item">2</div>
         <div class="item">3</div>
     </div>
-
+</div>
 
 </body>
 </html>
