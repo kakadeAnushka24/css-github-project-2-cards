@@ -1,96 +1,154 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Corse-Card</title>
     <style>
-        body{
-            background-color:white;
-        }
-        .container{
-            display: flex;
-            justify-content: space-evenly; 
-
-           
+        body {
+            background-color: white;
         }
 
-        .item{
-            background-color:rgb(232, 235, 239);
+
+        .item {
+            background-color: rgb(232, 235, 239);
             height: 400px;
             width: 300px;
             margin: 5px;
-            border: 1px solid rgb(206, 198, 198)
-            border-radius: 20px;
+            border: 1px solid black;
+             border-radius: 20px;
         }
 
-        .item{
-            border:1px solid rgb(206, 198, 198)
+        
+        .main-img {
+            
+           margin:2px;
+            width:295px;
+            border-radius: 15px;
+          
+            
         }
-        .main-img{
-            border-radius: 10px 10px 0px 0px ;
-            margin-bottom: 5px;
-        }
-       
-        .project-heading{
-        font-size: 20px;
-        font-weight: 600;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        .project-heading {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
 
         }
 
-        .sub-container{
+        .sub-container {
             padding-left: 10px;
             padding-right: 10px;
         }
-        .cource-name{
-            background-color:rgb(182, 229, 247);
+
+        .cource-name {
+            background-color: rgb(182, 229, 247);
             padding: 4px;
             border-radius: 4px;
         }
 
-        .project-discription{
-        font-size: 14px;
-        color: rgb(86, 85, 85);
-    }
+        .project-discription {
+            font-size: 14px;
+            color: rgb(86, 85, 85);
+        }
 
-    .tech-stack{
-        display: flex;
-        margin: 2px;
+        .tech-stack {
+            display: flex;
+            margin: 2px;
 
-    }
+        }
 
-    .tech{
-        background-color: rgb(220, 212, 212);
-        padding: 4px 20px;
-        border-radius: 20px;
-        margin-right: 10px;
-        font-size: 12px;
-        border: 1px solid rgb(110, 108, 108);
-    }
+        .tech {
+            background-color: rgb(220, 212, 212);
+            padding: 4px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(110, 108, 108);
+        }
+
+        .project-duration {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .project-duration-info {
+            font-size: 13px;
+        }
+        .main-container{
+            display:flex;
+            flex-direction:row;
+        }
+        .card1{
+            border-radius: 15px;
+        }
+        .set{
+            display:flex;
+            align-items: center;
+        }
+        
+        .image{
+            border-radius:50% ;
+        }
+        .clap{
+            align-items: center;
+        }
+        .value{
+            font-size:16px ;
+            align-items: center;
+            
+        }
+        
+       
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="item">
-            <image src="./image/rtc-homepage.png" width="300px" class="main-img"/>
+    <div class="main-container">
+            <div class="card1">
+            <div class="item">
+                <image src="./image/rtc-homepage.png"  class="main-img" />
 
-            <div class="sub-container">
-            <span class="project-heading">Spaceship</span>
-            <br/>
-            <br/>
+                <div class="sub-container">
+                    <span class="project-heading">Spaceship</span>
+                    <br />
+                    <br />
 
-            <span class="cource-name"> Internship Cohort Program 3.0</span>
-            <p class="project-discription">
-                Spaceship is a mini Wikipedia 📖 for computer science students, created by RoadToCode.</p>
-                <div class="tech-stack"> 
-                    <span class="tech">React</span>
-                    <span class="tech">GitHub</span>
-                    <span class="tech">MngoDB</span>
+                    <span class="cource-name"> Internship Cohort Program 3.0</span>
+                    <p class="project-discription">
+                        Spaceship is a mini Wikipedia 📖 for computer science students, created by RoadToCode.</p>
+
+
+                    
+                                <div class="tech-stack"></div>
+                                <span class="tech">React</span>
+                                <span class="tech">GitHub</span>
+                                <span class="tech">MngoDB</span>
+                        
+                    </br> </br> 
+                    <div class="set">
+                        <img src=".\image\calendar.png" alt="calender" height="15px"  class="calender">&nbsp;&nbsp;
+                    <span class="project-duration-info">Dec 2022 - Apr 2025</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="./Image.png.jpg" alt="image" height="20px" width="20px" class="image"/>
+                    <span class="project-duration-info">Kakade Anushka</span>
                 </div>
+                <hr>
+               <div class="clap">
+                <img src="./image/clap.png" height="16px" />
+                <span class="value">22</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="./image/share.png" height="16px"/>
+            <span class="value">10</span>
+            
         </div>
-        </div>
-        <div class="item">2</div>
-        <div class="item">3</div>
+            </div>
+            </div>
+        
+        <div class="card2">2</div>
+        <div class="card3">3</div>
     </div>
-</div>
+    </div>
+    
+ 
 </body>
+
 </html>
